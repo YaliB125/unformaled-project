@@ -1,0 +1,34 @@
+/* איפוס הגדרות בסיסיות של הדפדפן */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  direction: rtl; /* יישור לימין לכל האפליקציה */
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* הגדרות לעיצוב נקי של כותרות */
+h1, h2, h3, h4 {
+  color: #1e293b;
+  letter-spacing: -0.02em;
+}
+
+/* מעברים חלקים לכפתורים וקוביות */
+.transition-all {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* מניעת גלילה אופקית מיותרת */
+main {
+  overflow-x: hidden;
+}
